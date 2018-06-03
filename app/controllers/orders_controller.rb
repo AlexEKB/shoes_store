@@ -1,6 +1,5 @@
 class OrdersController < ApplicationController
-  #def index
-  #end
+ 
   skip_before_action :verify_authenticity_token, only: [:create]
 
   http_basic_authenticate_with name: "alex", password: "09031989", only: :index
